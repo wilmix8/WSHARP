@@ -42,10 +42,8 @@ Wsharp ADvantages over JAVA and other Programming Languages
 A) Wsharp is the combination of JAVA , C/C++, and Advanced OOPS.
 b) Wsharp will only accept the shortest attractive syntax.
 c) Wsharp also used for construction of any datastructures.
-d) Wsharp helps the developers to provide inheritance by not using extends
-keyword
-and call the class in main program when use in linux.
-e) Wsharp Solves diamond Problem with multiple Inheritance when used in linux.
+d)  WSHarp  is  easy  to  learn  focus  and  use  and  userfriendly.
+e) Wsharp Solves diamond Problem with multiple Inheritance .
 f) It also supports friendly function, pointers , and structures.
 g) Wsharp support Virtual memmory and garbage collection.
 h) It is efficient, fast and easy to understand, and it is a OOPS Technology.
