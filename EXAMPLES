@@ -1,0 +1,134 @@
+
+
+
+Example:
+========
+
+<WSHARP>
+<USE> WDBA;
+<USE> CDollar.WDBA;
+<IMPORT> 
+<PACK> MyP
+{
+    <CLASS> Programs
+    {
+          public void main()
+        {
+		
+	LArray root <NEW> LArray("root");//use  LArray  of  Wsharp
+		
+		<AList>  ar<NEW>  <AList>();
+		
+		
+		for  (int  i=0;i<=1000;i++)
+		
+		ar.add(i);
+		
+		root.add("wilmix");
+		root.add("jemin");
+		root.add("shalom");
+		root.add("1010");
+		root.add("101");
+		root.add("201");
+		root.add(ar.StringConvert());//  add  arraylist  contents
+		root.add("100000000");
+		//print the tree's size and contents
+		
+		root.printTree();//  print  the  tree  contents
+
+
+<TRY>
+{
+
+    string g = WDBASQL.WDBASQLS("datastores", "USEDATABASE", "dbpwds", "C:\\Programs\\WNOSQL\\WNOSQLProgramfiles\\WNOSQL-cod");
+
+
+
+
+    string t = WDBASQL.WDBASQLS("dbuser", "dbpwds", 1, "wilmix78", "wilmix78", 1, 5, g);
+
+
+    string s1 = "SelectAll from Telecom 3 to 29 , 1 to 7 ?= C By 1 1 : {0} : {0} :{0}";
+
+
+
+MessagBox.Show("wilmix");
+
+
+    java.util.ArrayList ar = WDBALIB.WDBAQUERY(s1, t);
+
+
+<PRINTLN>(""+ar);
+
+
+
+
+}
+
+<CATCH> (<EXE> e) { }
+
+
+		
+}
+
+
+}
+
+}
+
+
+
+EXAMPLE:2:Program.java
+=========
+
+<WSHARP>
+using  WDBA;//call  wdba  packages
+using  CDollar.WDBA;//  call  Database  packages
+<PACK> HelloWorldApplication1
+{
+   <CLASS> HelloWorld1
+   {
+ 
+
+public void main()
+      {
+         
+try
+{
+
+    string g = WDBASQL.WDBASQLS("datastores", "USEDATABASE", "dbpwds", "C:\\Programs\\WNOSQL\\WNOSQLProgramfiles\\WNOSQL-cod");
+    //include  the  path  where   wdba  data  is  stored.
+
+//write  credentials  code  of  wdba
+
+
+    string t = WDBASQL.WDBASQLS("dbuser", "dbpwds", 1, "wilmix78", "wilmix78", 1, 5, g);
+//  write   username  ,pwd
+
+    string s1 = "SelectAll from Telecom 3 to 29 , 1 to 7 ?= C By 1 1 : {0} : {0} :{0}";
+
+//  write  wdba query
+
+
+
+
+    java.util.ArrayList ar = WDBALIB.WDBAQUERY(s1, t);//use  Wsharp  java.util  package
+
+
+<PRINTLN>(""+ar);
+
+
+
+
+}
+
+catch (System.Exception e) { }
+
+
+
+
+
+
+      }
+   }
+}
